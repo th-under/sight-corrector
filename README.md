@@ -1,4 +1,4 @@
-# sight-corrector
+# sight corrector
 adjust the view direction during webcam meetings
 
 In webmeetings, people usually look at the monitor, not at the wecam. This gives the talk partner the impression not being looked at. This software corrects the misalignment at the talk partner's side.
