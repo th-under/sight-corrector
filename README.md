@@ -12,14 +12,22 @@ The result is displayed in a separate window and can be transmitted by screen sh
 Installation is not straight forward yet. For me this works:
 
 cd to your desired working directory
+
 conda create -n test
+
 conda activate test
+
 conda install python=3.7.6
+
 pip install opencv-python
+
 pip install mediapipe
+
 pip install matplotlib
+
 pip install scipy
 
 start the program:
+
 python sico.py 
 
