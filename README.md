@@ -1,33 +1,29 @@
-# sight corrector
-adjust the view direction during webcam meetings
+# Sight corrector
+Adjusts the eyes' view direction during webcam meetings
 
+## Description
 In webmeetings, people usually look at the monitor, not at the wecam. This gives the talk partner the impression not being looked at. This software corrects the misalignment at the talk partner's side.
-In a first step, a short video sequence is recorded during which the person looks into the webcam and moves the head sideways and up and down. This records the eyes and their surroundings and saves them as a reference for later use.
+In a first step, a short video sequence is recorded during which the user looks into the webcam while moving the head sideways and up and down. This step records "reference eyes" for later use. In the subsequent webmeeting, the eyes with the wrong sight direction are replaced by these "reference eyes".
 
-In the subsequent webmeeting, the eye area with the wrong sight direction is replaced by these reference eyes.
+![alt text](sight_direction.jpg)
 
-The result is displayed in a separate window and can be transmitted by screen sharing, e.g.
+The result is displayed in a separate window and can be transmitted by screen sharing.
 
 
-Installation is not straight forward yet. For me this works:
+## Installation
+The software was tested under 64-bit Ubuntu 20.04 with Python 3.7.6. It is recommended to create a virtual environment:
 
-cd to your desired working directory
+```
+download the project files into a separate directory
+cd to this directory
+python3 -m venv ./venv
+source ./venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
 
-conda create -n test
 
-conda activate test
+## Usage
 
-conda install python=3.7.6
-
-pip install opencv-python
-
-pip install mediapipe
-
-pip install matplotlib
-
-pip install scipy
-
-start the program:
-
-python sico.py 
+`python sico.py`
 
