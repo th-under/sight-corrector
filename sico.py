@@ -148,20 +148,4 @@ while True:
 
 
 
-'''
-not tested: webcam with different image shapes
-
-parse command line arguments
-slim requirements.txt
-license GPL-3.0
-readme
-adapt brightness
-enable to save / reload reference images
-remove flickering
-
-'''
-
-# https://www.reddit.com/r/learnpython/comments/68sywt/is_if_name_main_actually_needed/
-
-
 
