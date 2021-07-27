@@ -27,3 +27,14 @@ pip install -r requirements.txt
 
 `python sico.py`
 
+
+## customisation
+
+If desired you can edit global_vars.py. as follows:
+
+TWEAK_DENS (default 0.05, range >0 ... <1) # This is the density of the grid of the "reference eyes" sideways and up and down.
+MAP_TOL (default 0.2) # This is the tolerance up to which eye mapping should be performed. It is calculated as the euclidean distance between current head orientation and closest grid point
+DAMPING (default 5) # This variable is used to reduce flickering. The value represents positional changes between two time adjacent video frames.
+BTOL (default 1.01) # Threshold values for the relative difference in brightness between "reference eyes" and the current eyes for which eyes should not be tweaked.
+DEVICE_IN (default '/dev/video0') # The device name of the used webcam. For macOS use '0' instead of '/dev/video0'.
+MODE ('demo' or 'live') # 'demo' provides tweaked and original video shared in one window and including labelling. 'live' only shows tweaked video.
