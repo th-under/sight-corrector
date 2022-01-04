@@ -41,7 +41,7 @@ DAMPING (default 5) # This variable is used to reduce flickering. The value repr
 
 BTOL (default 1.01) # Threshold values for the relative difference in brightness between "reference eyes" and the current eyes for which eyes should not be tweaked.
 
-DEVICE_IN (default '/dev/video0') # The device name of the used webcam. For macOS use '0' instead of '/dev/video0'.
+DEVICE_IN (default '/dev/video0') # The device name of the used webcam. For windows or macOS use '0' instead of '/dev/video0'.
 
 MODE ('demo' or 'live') # 'demo' provides tweaked and original video shared in one window and including labelling. 'live' only shows tweaked video.
 ```
