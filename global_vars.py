@@ -5,7 +5,7 @@ MAP_TOL = 0.2 # tolerance up to which eye mapping should be performed (eukl. dis
 DAMPING = 5 # Value representing positional changes below which tweak updates are reduced for reducing flickering
 BTOL = 1.01 # rel. difference in brightness above which eyes should not be tweaked
 
-DEVICE_IN = '/dev/video0'
+DEVICE_IN = '/dev/video0' # For windows or macOS use DEVICE_IN = 0
 MODE = 'demo' # or 'live'
 
 
